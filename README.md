@@ -1,46 +1,63 @@
 # ESP32 Custom Board
-
 A custom ESP32-based development board designed and routed using EasyEDA.
-This project is designed as a compact and reusable ESP32 development platform for IoT, embedded systems, automation, sensor, Wi-Fi, and Bluetooth-based projects.
-The board includes an ESP32 module, USB interface, control buttons, power and supporting circuitry, and GPIO headers for connecting external components.
+This project is designed as a compact and reusable ESP32 development platform for IoT, embedded systems, automation, sensors, Wi-Fi, and Bluetooth-based projects.
 
 ## Features
+
 - ESP32-based custom development board
 - Wi-Fi connectivity
 - Bluetooth connectivity
 - USB interface for programming and power
 - GPIO header pins for external components
-- Reset/boot control buttons
-- Custom PCB layout
+- BOOT/RESET control buttons
+- Custom PCB layout and routing
 - Compact development-board design
 - Designed and routed in EasyEDA
-- Editable PCB source files included
+- Editable PCB design file included
+- 3D OBJ model included
+- Gerber manufacturing files included
 
 ## Board Overview
 
 The custom PCB contains:
+
 - ESP32 module
 - USB connector
 - USB-to-serial/programming circuitry
-- Power regulation and supporting components
+- Power and supporting circuitry
 - BOOT/RESET control buttons
 - GPIO header pins
-- Passive components required for the board
+- Passive components
 - Custom PCB traces and routing
 
 ## Project Files
-- `PCB_PCB_ESP32_2026-09-11.json` - Main EasyEDA PCB design/source file.
-- `Autorouter_PCB_ESP32_2026-09-11.dsn` - Autorouter design file.
 
-## Software Required
-To modify or view the PCB design:
-- EasyEDA
+### PCB Design
+
+- `PCB/PCB_PCB_ESP32_2026-09-11.json` - Main EasyEDA PCB design/source file.
+- `Autorouter/Autorouter_PCB_ESP32_2026-09-11.dsn` - Autorouter design file.
+
+### 3D Model
+
+- `3D/ESP32.obj` - 3D OBJ model of the PCB.
+
+### Manufacturing Files
+
+- `Gerber/Gerber_ESP32_PCB.zip` - Gerber files for PCB manufacturing.
+
+### Images
+
+The `Images` folder contains PCB design, routing, and 3D preview images.
 
 ## PCB Preview
 
 ### PCB Design
 
 ![ESP32 PCB Design](Images/pcb-design.png)
+
+### PCB Routing
+
+![ESP32 PCB Routing](Images/pcb-routing.png)
 
 ### Front 3D View
 
@@ -50,20 +67,32 @@ To modify or view the PCB design:
 
 ![ESP32 PCB Back](Images/pcb-3d-back.png)
 
+## Software Required
+
+To view or modify the PCB design:
+
+- EasyEDA
+
+The OBJ model can be viewed using any software that supports `.obj` 3D files.
+
 ## How to Open the PCB Design
 
-1. Download the `.json` PCB source file from this repository.
+1. Download the PCB source file from the `PCB` folder.
 2. Open EasyEDA.
-3. Import/open the downloaded EasyEDA source file.
-4. The PCB layout can then be viewed and modified in EasyEDA.
-5. Check the schematic, footprints, PCB dimensions, layers, and design rules before making changes.
+3. Import/open the downloaded PCB design file.
+4. View or modify the PCB layout in EasyEDA.
+5. Check the component footprints, PCB dimensions, layers, routing, and design rules before making changes.
 
 ## How to Manufacture the PCB
 
-### Step 1 - Open the Design in EasyEDA
-Download the PCB source file from this repository and open it in EasyEDA.
+### Step 1 - Download the Design
+
+Download the PCB design file from the `PCB` folder.
+
+You can also download the Gerber ZIP from the `Gerber` folder if you want to manufacture the PCB directly.
 
 ### Step 2 - Check the Design
+
 Before manufacturing, verify:
 
 - PCB dimensions
@@ -77,12 +106,13 @@ Before manufacturing, verify:
 - GPIO headers
 - Design Rule Check (DRC)
 
-Run the DRC in EasyEDA and fix any errors that need to be corrected.
+Run the DRC in EasyEDA and fix any errors before manufacturing.
 
-### Step 3 - Generate Gerber Files
-In EasyEDA, generate the PCB fabrication/manufacturing files.
-The manufacturer normally uses the Gerber files to manufacture the bare PCB.
-The generated Gerber package should contain the required PCB layer information such as:
+### Step 3 - Generate or Use Gerber Files
+
+The repository already contains a Gerber ZIP file in the `Gerber` folder.
+
+The Gerber files contain the information required by a PCB manufacturer, including:
 
 - Copper layers
 - Solder mask
@@ -90,17 +120,24 @@ The generated Gerber package should contain the required PCB layer information s
 - Board outline
 - Drill information
 
-### Step 4 - Generate the BOM
-Generate a Bill of Materials (BOM) containing the components required to assemble the board.
-The BOM should include information such as:
+If you make changes to the PCB design, generate a new Gerber package from EasyEDA before ordering the PCB.
+
+### Step 4 - Prepare the Components
+
+Use the PCB design and component information to identify the components required for assembly.
+
+A Bill of Materials (BOM) can be prepared containing:
+
 - Component value
 - Component/package
 - Quantity
 - Part number or manufacturer part number where applicable
 
 ### Step 5 - Order the PCB
-Upload the generated Gerber ZIP file to a PCB manufacturing service.
-Select the required PCB specifications such as:
+
+Upload the Gerber ZIP file to a PCB manufacturing service.
+
+Select the required manufacturing specifications, such as:
 
 - PCB quantity
 - Number of layers
