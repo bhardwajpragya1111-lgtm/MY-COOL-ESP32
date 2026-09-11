@@ -36,6 +36,10 @@ The custom PCB contains:
 To modify or view the PCB design:
 - EasyEDA
 
+## PCB Preview
+
+![ESP32 PCB Front](Images/pcb-3d-front.png)
+
 ## How to Open the PCB Design
 
 1. Download the `.json` PCB source file from this repository.
