@@ -38,7 +38,17 @@ To modify or view the PCB design:
 
 ## PCB Preview
 
+### PCB Design
+
+![ESP32 PCB Design](Images/pcb-design.png)
+
+### Front 3D View
+
 ![ESP32 PCB Front](Images/pcb-3d-front.png)
+
+### Back 3D View
+
+![ESP32 PCB Back](Images/pcb-3d-back.png)
 
 ## How to Open the PCB Design
 
