@@ -2,6 +2,15 @@
 A custom ESP32-based development board designed and routed using EasyEDA.
 This project is designed as a compact and reusable ESP32 development platform for IoT, embedded systems, automation, sensors, Wi-Fi, and Bluetooth-based projects.
 
+## 🎥 Project Demo
+
+Watch the complete project demonstration on YouTube:
+
+[▶️ Watch the Demo Video](https://youtu.be/ROO8zUUU6sM)
+
+This video demonstrates the project functionality, hardware setup, working process, and final output.
+
+
 ## Features
 
 - ESP32-based custom development board
