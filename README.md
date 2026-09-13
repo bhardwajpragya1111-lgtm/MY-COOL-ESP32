@@ -76,7 +76,9 @@ The `Images` folder contains PCB design, routing, and 3D preview images.
 
 ![ESP32 PCB Back](Images/pcb-3d-back.png)
 
-### Build Photo: Not available yet
+## Bill of Materials
+
+[BOM.csv](BOM_ESP32_2026-09-13.csv)
 
 ## Software Required
 
