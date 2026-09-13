@@ -62,7 +62,7 @@ The `Images` folder contains PCB design, routing, and 3D preview images.
 
 ### PCB Design
 
-![ESP32 PCB Design](Images/pcb-design.png)
+![ESP32 PCB Design](Images/ pcb-design.png)
 
 ### PCB Routing
 
