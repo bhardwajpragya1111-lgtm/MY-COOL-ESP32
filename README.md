@@ -80,7 +80,7 @@ Build Photo: Not available yet
 
 ## Bill of Materials
 
-[BOM.csv](BOM_ESP32_2026-09-13.csv)
+[BOM.csv](BOM/BOM.md)
 
 ## Software Required
 
