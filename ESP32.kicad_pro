@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "filename": "ESP32.kicad_pro",
+    "version": 1
+  },
+  "board": {},
+  "boards": [],
+  "cvpcb": {},
+  "erc": {},
+  "libraries": {},
+  "net_settings": {},
+  "pcbnew": {},
+  "schematic": {},
+  "text_variables": {}
+}
